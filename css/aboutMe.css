@@ -1,0 +1,69 @@
+.aboutMe{
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.aboutMe .subtitleAboutMe{
+  color: #ccc;
+}
+
+.subtitleAboutMe {
+  font-size: 7.5rem;
+  line-height: 1;
+  text-transform: uppercase;
+  max-width: 6ch;
+}
+
+@media (max-width: 1000px) {
+  .subtitleAboutMe {
+    font-size: 3rem;
+    max-width: 4ch;
+  }
+}
+
+@media (max-width: 800px) {
+  .subtitleAboutMe {
+    font-size: 2rem;
+    max-width: initial;
+    text-align: center;
+  }
+}
+
+.aboutMeText {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  max-width: 45ch;
+  color: #525252;
+  justify-content: space-between;
+}
+
+.aboutMeText strong{
+  color: #141414;
+}
+
+@media (max-width: 1000px) {
+    .aboutMeText {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width:800px) {
+  .aboutMe{
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .aboutMe .subtitleAboutMe{
+  color: #141414;
+  }
+  .aboutMeText{
+    font-size: 1.25rem;
+    
+  }
+}

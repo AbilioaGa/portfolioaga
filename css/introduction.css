@@ -1,0 +1,75 @@
+.introduction {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  align-items: center;
+}
+
+.introduction h1 {
+  font-size: 4.5rem;
+  line-height: 1.125;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.introduction h1::before {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 100px;
+  background: url("../assets/detalhe.svg") no-repeat center;
+  position: absolute;
+  top: -15px;
+  left: -40px;
+  z-index: -1;
+}
+
+.introduction p {
+  font-size: 1.5rem;
+  color: #525252;
+}
+
+@media (max-width: 1000px) {
+  .introduction h1 {
+    font-size: 3rem;
+  }
+  .introduction p {
+    font-size: 1rem;
+  }
+  .introduction h1::before {
+    background-size: 80px;
+    top: -25px;
+    left: -45px;
+  }
+}
+
+@media (max-width: 800px) {
+  .introduction {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  .introduction h1 {
+    font-size: 2rem;
+  }
+  .introduction h1::before {
+    background-size: 65px;
+    top: -35px;
+    left: -55px;
+  }
+}
+
+@media (max-width: 400px) {
+  .introduction {
+    grid-template-columns: 1fr;
+  }
+  .introduction h1,
+  p {
+    text-align: center;
+  }
+  .introduction h1::before {
+   display: none;
+  }
+}
